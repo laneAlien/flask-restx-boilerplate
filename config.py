@@ -29,7 +29,7 @@ class TestingConfig(Config):
     DEBUG = True
     TESTING = True
     # In-memory SQLite for testing
-    SQLALCHEMY_DATABASE_URI = "sqlite:///:memory:"
+    SQLALCHEMY_DATABASE_URI = "postgresql://user:pass@host:port/dbname"
     PRESERVE_CONTEXT_ON_EXCEPTION = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
